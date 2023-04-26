@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat-Black', sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+.container {
+    background-color: white;
+    position: absolute;
+    height: 80vh;
+    width: 40vh;
+    top: 10%;
+    left: 40%;
+}
+
+.main {
+    background-image: url('https://media.tenor.com/S8SNGy75-X4AAAAd/clouds-storm.gif');
+    background-size: cover;
+    background-position: top;
+    padding: 1rem 1.5rem;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+}
+
+.weather-details {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.country-box {
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.country-container {
+    padding-bottom: 0.5rem;
+}
+
+.country-input {
+    padding: 0;
+    margin: 0;
+    height: 40px;
+    width: 250px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: transparent;
+    outline: none;
+    border: 0;
+    color: #f0f0f0;
+    text-transform: uppercase;
+}
+
+.country-input::placeholder {
+    color: #f0f0f083;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.country-btn {
+    font-size: 1.5rem;
+    background-color: transparent;
+    border: 0;
+    color: #f0f0f0;
+    cursor: pointer;
+}
+
+.country-btn:active {
+    transform: scale(0.8);
+}
+
+.city {
+    color: #dddddd;
+    margin-bottom: 0.5rem;
+}
+
+.temperature {
+    font-size: 5rem;
+    color: #f0f0f0;
+    font-weight: bolder;
+}
+
+.weather-condition {
+    color: #f0f0f0;
+    padding-top: 1.2rem;
+    padding-left: 1rem;
+    padding-bottom: 2.2rem;
+}
+
+.other-details {
+    padding: 2rem 1.5rem;
+}
+
+.heading {
+    color: black;
+    font-size: 1rem;
+    font-weight: bolder;
+    margin-bottom: 1.5rem;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.row:first-child {
+    margin-bottom: 1.5rem;
+}
+
+.row i {
+    padding-top: 0.5rem;
+    font-size: 1.5rem;
+    font-family: 'FontAwesome';
+    content: '\f1ea';
+    padding-right: 0.8rem;
+}
+
+.detail {
+    display: flex;
+}
+
+.extra-detail {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.detail-heading {
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #a1a1a1;
+    padding-bottom: 0.2rem;
+}
+
+.detail-content {
+    font-weight: bolder;
+    font-size: 1.1rem;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+.not-available {
+    color: white;
+    position: absolute;
+    font-size: 1.5rem;
+    top: 30%;
+    left: 17%;
+}
+
+.time {
+    color: #f0f0f0;
+    font-size: 0.8rem;
+}
+
+@media (max-width: 1000px) {
+    .container {
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+    }
+}

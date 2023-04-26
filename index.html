@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <!-- Font Awesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Stylesheet  -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="main">
+            <div class="weather-details">
+                <div class="country-box">
+                    <form class="country-container">
+                        <input type="text" placeholder="Your Country" maxlength="20" class="country-input">
+                        <button class="country-btn"><i class="fa-solid fa-arrow-right"></i></button>
+                    </form>
+                    <div class="city">New Delhi, Delhi</div>
+                    <div class="time">5:23 AM</div>
+                </div>
+                <div class="tempearture-box">
+                    <div class="temperature">18°C</div>
+                    <div class="weather-condition">Rainy</div>
+                </div>
+            </div>
+        </div>
+        <div class="other-details">
+            <div class="heading">Weather Now</div>
+            <div class="extra-details">
+                <div class="row row1">
+                    <div class="detail detail1">
+                        <i class="fa-solid fa-temperature-low"></i>
+                        <div class="extra-detail">
+                            <div class="detail-heading">Feel Like</div>
+                            <div class="detail-content feels-like">28°C</div>
+                        </div>
+                    </div>
+                    <div class="detail detail2">
+                        <i class="fa-solid fa-wind"></i>
+                        <div class="extra-detail">
+                            <div class="detail-heading">Wind</div>
+                            <div class="detail-content wind">24 km/h</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row row2">
+                    <div class="detail detail3">
+                        <i class="fa-solid fa-umbrella"></i>
+                        <div class="extra-detail">
+                            <div class="detail-heading">Precipitaion</div>
+                            <div class="detail-content precip">0 mm</div>
+                        </div>
+                    </div>
+                    <div class="detail detail4">
+                        <i class="fa-regular fa-droplet"></i>
+                        <div class="extra-detail">
+                            <div class="detail-heading">Humidity</div>
+                            <div class="detail-content humidity">40</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="not-available hidden">Country Not Available</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
